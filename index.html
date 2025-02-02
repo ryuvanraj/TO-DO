@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id = "foot">
+  <footer>
+    <h1>To-Do</h1>
+    <button id = "plus-btn" onclick="window.location.href='index2.html'">+</button>
+  </footer>
+</div>
+  <hr>
+  <ul id="task-list"></ul>
+
+  <script>
+    function loadTasks() {
+      let taskss = JSON.parse(localStorage.getItem("taskss")) || [];
+      // Clear the list before adding tasks
+      document.getElementById("task-list").innerHTML = taskss.map(task => 
+        `<li>
+          Task: ${task.taskText} <br> 
+          Due: ${task.taskDate}
+        </li>`
+      ).join("");
+    }
+    loadTasks(); // Load tasks on page load
+  </script>
+</body>
+</html>

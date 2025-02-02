@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('https://i.pinimg.com/originals/5d/c3/50/5dc350fb8ef7a2c3dbdb1e3d4bc44083.gif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+    }
+  </style>
+</head>
+<body>
+    <div id="input-container">
+        <input type="text" id="task-input" placeholder="Enter your task...">
+        <input type="date" id="task-date" placeholder="Enter your date">
+        <button id="add-task" onclick="addTask()">Add Task</button>
+    </div>
+
+    <script>
+      function addTask() {
+        let task = document.getElementById("task-input").value;
+        let date = document.getElementById("task-date").value;
+
+        if (task.trim() !== "" && date.trim() !== "") {
+          let taskss = JSON.parse(localStorage.getItem("taskss")) || [];
+          taskss.push({ taskText: task, taskDate: date });
+          localStorage.setItem("taskss", JSON.stringify(taskss));
+        }
+        window.location.href = "index.html";
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/originals/5d/c3/50/5dc350fb8ef7a2c3dbdb1e3d4bc44083.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+#plus-btn {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 50px;
+    width: 50px;
+}
+
+input, #add-task {
+    display: block;
+    width: 50%;
+    margin-top: 20px;
+}
+
+#task-input, #task-date {
+    height: 30px;
+    padding: 10px;
+}
+
+#add-task {
+    height: 53px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#task-list {
+    color: white;
+}
