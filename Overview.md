@@ -31,14 +31,6 @@ A simple and user-friendly To-Do list application where you can add tasks with d
 - JavaScript (Vanilla)
 - Local Storage for task persistence
 
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature-name`).
-5. Open a pull request.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
